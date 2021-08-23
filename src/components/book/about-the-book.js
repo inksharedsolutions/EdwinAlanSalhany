@@ -24,7 +24,7 @@ const AboutTheBook = (props) => {
 				<div 
 					className="container"
 					id="book-containers" >
-                        <MDBCard className="my-5 px-5 pb-1 text-center card z-depth-5 hoverable">
+                        <MDBCard className="my-5 px-1 pb-1 text-center card z-depth-5 hoverable">
                             <MDBCardBody>
                                 <MDBRow className="text-md-left">
                                     <MDBCol lg="6" md="12" className="mb-5">

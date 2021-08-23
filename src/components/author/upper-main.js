@@ -12,7 +12,7 @@ const UpperMain = () => {
             <div className="author-content-section">
                 <section className="upper-main">
                     <div className="container-gt">
-                        <MDBCard className="my-5 px-5 pb-1 text-center card z-depth-5 hoverable">
+                        <MDBCard className="my-5 text-center card z-depth-5 hoverable">
                             <MDBCardBody>
                                 <MDBRow className="text-md-left">
                                     <MDBCol lg="6" md="12" className="mb-5">
@@ -20,7 +20,7 @@ const UpperMain = () => {
                                         tag="img"
                                         alt="Sample avatar" />
                                     </MDBCol>
-                                    <MDBCol md="8" lg="6" className="float-right author-content">
+                                    <MDBCol md="8" lg="6" className="float-right author-content text-center">
                                         <h1 className="font-weight-bold mb-3">Edwin Alan Salhany</h1>
                                         <h6 className="font-weight-bold white-text mb-3">
                                             Author/Writer

@@ -9,6 +9,10 @@
     border-radius: 10px;
     opacity: 0.9;
     height: auto !important;
+
+    @media (max-width:768px) {
+        margin-top: 10vh;
+    }
 }
 
 .carousel {
@@ -21,7 +25,7 @@
 
         @media (max-width:768px) {
             height: auto ;
-        width: 60%;
+        width: 75%;
             
         }
        
@@ -45,10 +49,7 @@
             height: 40vh;
             
         }
-        @media (max-width:400px) {
-            height: 29vh;
-            
-        }
+   
     }
 
 }
@@ -102,6 +103,10 @@
 .about-the-author {
     font-weight: 700;
     font-size: 4em;
+
+    @media (max-width:550px) {
+        font-size: 3em;
+    }
 }
 
 .content-wrapper{
@@ -225,7 +230,7 @@
     text-align: center;
     background: #645e50;
     border-radius: 30px;
-
+   
     h1{
         font-size: 2.5em;
         text-transform: uppercase;
@@ -243,33 +248,61 @@
 	align-items: stretch;
 	align-content: space-between;
 
+    
+    @media (max-width:768px) {
+        flex-direction: column;
+        }
 
+    p{
+        margin: 0;
+    }
     .middle{
-        width: 42%;
+        width: 47%;
         margin: 10px auto;
+        padding: 45px 45px;
         font-family: serif;
         font-style: italic;
         font-size: 20px;
         letter-spacing: 1px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+           
+    @media (max-width:768px) {
+        width: 90%;
+        padding: 45px 20px;
+        }
+    
+    }
+    .name{
+        margin: 10px;
+        color: #ebbf5b;
+        font-size: 1.5em;
+    }
+    .desc{
+        margin: 0;
+        line-height: 22px;
+        font-size: 1em;
     }
 
-    @media (max-width:480px) {
-        flex-direction: column;
-        .middle{
-            width: 42%;
-            margin: 10px auto;
-            font-family: serif;
-            font-style: italic;
-            font-size: 15px;
-            letter-spacing: 1;
-            
-        }
     }
-}
+
 .fav-line{
     margin: auto ;
     font-size: 18px;
     font-style: italic;
     color: #c9a657;
+    padding: 0 15px;
 
+}
+
+.text-center{
+    text-align: inherit;
+
+    @media (max-width: 768px) {
+        text-align: center;
+        
+    }
 }

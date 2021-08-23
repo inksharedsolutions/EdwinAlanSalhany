@@ -17,7 +17,12 @@
 
 .author-content{
     h1{
-        font-size: 60px !important;
+        font-size: 60px ;
+
+        @media (max-width: 768px) {
+            font-size: 27px ;
+            
+        }
     }
 }
 
@@ -196,5 +201,13 @@
 
     #logos-col{
         margin: 6% 0;
+    }
+}
+.col-md-8 {
+    @media (max-width:768px) {
+        flex: 100%;
+        max-width: 100%;
+        text-align: center;
+        
     }
 }

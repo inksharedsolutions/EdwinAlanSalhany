@@ -87,7 +87,7 @@ const UpperMain = () => {
                             
                             
                         </CarouselProvider>
-                        <p>Taking a unique approach to harmonizing the Biblical accounts, Edwin Alan Salhany expertly weaves the four Gospel stories together into one continuous chronological narrative, removing duplication, and yet preserving all the details and nuances of the different writers.  </p>
+                        <p className="p15"> Taking a unique approach to harmonizing the Biblical accounts, Edwin Alan Salhany expertly weaves the four Gospel stories together into one continuous chronological narrative, removing duplication, and yet preserving all the details and nuances of the different writers.  </p>
                         <span><Link to="/about-the-book">READ MORE</Link></span>
                         {/* <Slider {...settings}>
                             <div className="book-wrapper-slider">
@@ -124,32 +124,10 @@ const UpperMain = () => {
                     </div>
                     <br/>
                     <br/>
-                    <div className="testimonialsmid-main z-depth-5">
-                        <div className="container-gt">
-                            <div className="content-wrapper">
-                                <h1>Testimonials</h1>
-                                
-                               <div className = "flex"> <div className="middle">
-                                What a great book! I love it.  It is certainly a tremendous product that I know I will find very useful....You've done a great job.  <br/> <br/> -  John Bradshaw <br/> - Speaker/Director It is Written International
-                                </div>
-                                <div className="middle">
-                                I just want to express my appreciation for your edition of the Gospels. It was such a pleasure to read that I read it half through as soon as I got home with it.
-Without the duplications the story is much stronger and the sequence of events easier to follow. I like the use of the name "Yeshua". It seems to me to add a little reverence to the reading. I also find the appended material quite useful.
-I think "The Gospel 'lite'" is a good idea well done and I recommend it to anyone and everyone. <br/> <br/>- Ray Barger - Reader
-
-                                </div>
-                                </div>
-                            </div>
-
-                            <div className="grid-template-four-col" id="logos-col">
-                                                            
-
-                            </div>
-                        </div>
-                    </div>
+                 
                    
                     <div className="container-gt">
-                        <MDBCard className="my-5 px-5 pb-1 text-center card z-depth-5 hoverable">
+                        <MDBCard className="pb-1 text-center card z-depth-5 hoverable">
                             <MDBCardBody>
                                 <h2 className="h1-responsive font-weight-bold my-5 about-the-author">
                                     AUTHOR
@@ -188,6 +166,36 @@ I graduated in 1978 from Southern Missionary College, Collegedale, TN, cum laude
                                 </MDBRow>
                             </MDBCardBody>
                         </MDBCard>
+                    </div>
+                       <div className="testimonialsmid-main z-depth-5">
+                        <div className="container-gt">
+                            <div className="content-wrapper">
+                                <h1>Testimonials</h1>
+                                
+                               <div className = "flex">
+                                <div className="middle card">
+                               <p> What a great book! I love it.  It is certainly a tremendous product that I know I will find very useful....You've done a great job.</p>
+                               <p className="name">   John Bradshaw </p>
+                                <p className= "desc"> Speaker/Director It is Written International</p>
+                                </div>
+
+                                <div className="middle card">
+                               <p> I just want to express my appreciation for your edition of the Gospels. It was such a pleasure to read that I read it half through as soon as I got home with it.
+                                Without the duplications the story is much stronger and the sequence of events easier to follow. I like the use of the name "Yeshua". It seems to me to add a little reverence to the reading. I also find the appended material quite useful.
+                                I think "The Gospel 'lite'" is a good idea well done and I recommend it to anyone and everyone. </p>
+
+                               <p className="name"> Ray Barger </p>
+                                <p className="desc"> Reader</p>
+                                </div>
+                                
+                                </div>
+                            </div>
+
+                            <div className="grid-template-four-col" id="logos-col">
+                                                            
+
+                            </div>
+                        </div>
                     </div>
                     <div className="mid-main z-depth-5">
                         <div className="container-gt">

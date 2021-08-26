@@ -30,7 +30,7 @@
     "html-react-parser": "^0.14.0",
     "interweave": "^12.5.0",
     "mdbreact": "^4.27.0",
-    "node-sass": "^6.0.1",
+    "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "pure-react-carousel": "^1.27.4",
     "react": "^16.12.0",

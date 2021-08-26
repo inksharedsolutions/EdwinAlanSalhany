@@ -27,26 +27,26 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-9d0e8a5723252739ff15.js"
+    "url": "webpack-runtime-ebb23e11295bd95a13c3.js"
   },
   {
-    "url": "styles.bcaba57416fccb50f55e.css"
+    "url": "styles.dd099905ad6b6169461f.css"
   },
   {
     "url": "styles-407fe62976dc5310c43e.js"
   },
   {
-    "url": "framework-81279cacaab4bdba7685.js"
+    "url": "framework-712d0c71a05a512b21eb.js"
   },
   {
-    "url": "app-87e22e5094be933d5bfd.js"
+    "url": "app-85f5be3e148b33223921.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "97924a04b41c825cd84dccb891eb303e"
+    "revision": "c64ac2e8099d51d9dd89b3202a79123d"
   },
   {
-    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-b0556ce5127c1a3e2490.js"
+    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-241020a1cf7d0f317bbe.js"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
@@ -54,14 +54,14 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "b1668ad8194820a83e5ad168edd9bf96"
+    "revision": "8b477fdc5a962b282f25bb6426a26534"
   },
   {
-    "url": "polyfill-afb298e3d6be300c6fc3.js"
+    "url": "polyfill-f69c135b0d42e2dd76ee.js"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "efecb65fa1fe3d0f05a8f2dd19eb98fc"
+    "revision": "32fb8161d2948801457b6e1e0dc4057a"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -153,7 +153,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-87e22e5094be933d5bfd.js`))) {
+  if (!resources || !(await caches.match(`/app-85f5be3e148b33223921.js`))) {
     return await fetch(event.request)
   }
 

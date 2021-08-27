@@ -13,15 +13,16 @@ const main = () => {
 				</div>
 
 				<div className="column is-three-fifths section-main-contents">
-					<p>
-						<span className="icon-auhtor">
-							<img alt="author_icon" src={icon} />
+					<div className="flex">
+						<img alt="author_icon" src={icon} />
+						<p className="author-name-tagline">Edwin Alan Salhany</p>
+					</div>
+			
+						
+							{/* <img alt="author_icon" src={icon} />
 							<span className="author-name-tagline">
 								Edwin Alan Salhany
-								<span className="author-fx" />
-							</span>
-						</span>
-					</p>
+								<span className="author-fx" /> */}
 
 					<p style={{textAlign: "justify"}}>
                     	I graduated in 1978 from Southern Missionary College, Collegedale, TN, cum laude with BA degrees in theology and applied religion.  I have been blessed to be able to use my education as a youth leader, church elder and lay-preacher.

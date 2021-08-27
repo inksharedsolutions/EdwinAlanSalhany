@@ -37,18 +37,33 @@
         font-weight: bold;
     }
 }
+.flex{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    img{
+        width: 50%;
+        margin: 0;
+
+        @media (max-width: 500px) {
+            
+            width: 80%;
+            margin: 10px 0;
+        }
+	}
+}
 
 .icon-auhtor{
 	img{
-        width: 70px;
+        width: 100%;
         margin: 0;
 	}
 }
 
 .author-name-tagline{
 	
-    position: absolute;
-    margin: 17px;
+    position: relative;
+    font-size: 3em;
     letter-spacing: 2px;
     color: #deab1c;
 
@@ -70,7 +85,7 @@
 }
 
 .section-main-contents{
-    margin-top: 4em;
+    margin-top: 0em;
 }
 
 .main-bottom-wrapper{
@@ -202,6 +217,12 @@
         // height: 450px;
         transition: transform .2s ease;
     }
+    .img-link{
+       img{
+        max-width: 450px;
+        background-color: #fff;
+       }   
+     }
 
     .img-link:hover{
         transform: scale(1.1);

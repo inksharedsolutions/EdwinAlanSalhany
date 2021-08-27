@@ -5,7 +5,7 @@ const preferDefault = m => (m && m.default) || m
 
 
 exports.components = {
-  "component---cache-dev-404-page-js": hot(preferDefault(require("D:\\Tina\\Websites\\EdwinAlanSalhany\\.cache\\dev-404-page.js"))),
+  "component---cache-caches-gatsby-plugin-offline-app-shell-js": hot(preferDefault(require("D:\\Tina\\Websites\\EdwinAlanSalhany\\.cache\\caches\\gatsby-plugin-offline\\app-shell.js"))),
   "component---src-pages-404-js": hot(preferDefault(require("D:\\Tina\\Websites\\EdwinAlanSalhany\\src\\pages\\404.js"))),
   "component---src-pages-about-the-author-js": hot(preferDefault(require("D:\\Tina\\Websites\\EdwinAlanSalhany\\src\\pages\\about-the-author.js"))),
   "component---src-pages-about-the-book-js": hot(preferDefault(require("D:\\Tina\\Websites\\EdwinAlanSalhany\\src\\pages\\about-the-book.js"))),

@@ -2,10 +2,10 @@ import React from 'react'
 import Layout from '../components/layout'
 
 import Header from '../components/Header'
-import Main from '../components/Main'
-import Footer from '../components/Footer'
+// import Main from '../components/Main'
+// import Footer from '../components/Footer'
 import UpperMain from '../components/upper-main'
-import MidMain from '../components/mid-main'
+// import MidMain from '../components/mid-main'
 import SecondLayout from '../components/secod_layout'
 
 class IndexPage extends React.Component {

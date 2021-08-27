@@ -1,23 +1,23 @@
 import React, {useState, useEffect} from 'react'
 import { Link } from 'gatsby'
-import FrontBook from '../../static/banner/pexels-photo-417074.jpeg'
-import { MDBMask, MDBView } from "mdbreact";
+// import FrontBook from '../../static/banner/pexels-photo-417074.jpeg'
+// import { MDBMask, MDBView } from "mdbreact";
 // import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import {  MDBRow, MDBCol, MDBCard, MDBAvatar, MDBCardBody, MDBIcon, MDBMedia } from "mdbreact";
+import {  MDBRow, MDBCol, MDBCard, MDBCardBody, MDBIcon, MDBMedia } from "mdbreact";
 import author from '../../static/author/main_author.jpg'
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import { CarouselProvider, Slider, Slide} from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 import '../assets/scss/upper-main.scss'
 
 import Book1 from '../../static/books/Book1.png'
-import Book2 from '../../static/books/Book2.png'
-import Book3 from '../../static/books/Book3.png'
-import Book4 from '../../static/books/Book4.png'
-import Book5 from '../../static/books/Book5.png'
-import Book6 from '../../static/books/Book6.png'
+// import Book2 from '../../static/books/Book2.png'
+// import Book3 from '../../static/books/Book3.png'
+// import Book4 from '../../static/books/Book4.png'
+// import Book5 from '../../static/books/Book5.png'
+// import Book6 from '../../static/books/Book6.png'
 
 import Logo1 from '../../static/logo/amazon.png'
 import Logo2 from '../../static/logo/bam.png'
@@ -39,13 +39,13 @@ const UpperMain = () => {
 
       console.log(mobState);
 
-    var settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: (mobState) ? 1 : 4,
-        slidesToScroll: 1,
-     };
+    // var settings = {
+    //     dots: false,
+    //     infinite: true,
+    //     speed: 500,
+    //     slidesToShow: (mobState) ? 1 : 4,
+    //     slidesToScroll: 1,
+    //  };
 
     return (
             <div className="content-section z-depth-5 hoverable">
@@ -77,7 +77,7 @@ const UpperMain = () => {
                             {/* <ButtonBack>Back</ButtonBack>
                             <ButtonNext>Next</ButtonNext> */}
                              <Slider className="slider">
-                                <Slide className="slide" index={0}><img src={Book1}/></Slide>
+                                <Slide className="slide" index={0}><img src={Book1} alt='The Gospel "Lite"'/></Slide>
                                 {/* <Slide className="slide" index={1}><img src={Book2}/><h3>Alaskan Wilderness</h3></Slide> */}
                                 {/* <Slide className="slide" index={2}><img src={Book3}/><h3>Alaskan Wilderness 2</h3></Slide>
                                 <Slide className="slide" index={2}><img src={Book4}/><h3>Alaskan Wilderness 3</h3></Slide>
@@ -150,16 +150,16 @@ I graduated in 1978 from Southern Missionary College, Collegedale, TN, cum laude
                                             <br/><br/>
                                              <Link to="/about-the-author">Read More</Link>
                                         </p>
-                                        <a href="https://www.facebook.com/StrattonPressInc" target="_blank" className="p-2 fa-lg fb-ic">
+                                        <a href="https://www.facebook.com/StrattonPressInc" target="_blank" rel="noreferrer" className="p-2 fa-lg fb-ic">
                                             <MDBIcon fab icon="facebook-f" />
                                         </a>
-                                        <a href="https://twitter.com/strattonpress/" target="_blank" className="p-2 fa-lg tw-ic">
+                                        <a href="https://twitter.com/strattonpress/" target="_blank" rel="noreferrer" className="p-2 fa-lg tw-ic">
                                             <MDBIcon fab icon="twitter" />
                                         </a>
-                                        <a href="https://www.instagram.com/strattonpress/" target="_blank" className="p-2 fa-lg tw-ic">
+                                        <a href="https://www.instagram.com/strattonpress/" target="_blank" rel="noreferrer" className="p-2 fa-lg tw-ic">
                                             <MDBIcon fab icon="instagram" />
                                         </a>
-                                        <a href="https://www.goodreads.com/author/show/6067587.Edwin_Alan_Salhany" target="_blank" className="p-2 fa-lg dribbble-ic">
+                                        <a href="https://www.goodreads.com/author/show/6067587.Edwin_Alan_Salhany" target="_blank" rel="noreferrer" className="p-2 fa-lg dribbble-ic">
                                             <MDBIcon fab icon="goodreads-g" />
                                         </a>
                                     </MDBCol>
@@ -208,19 +208,19 @@ I graduated in 1978 from Southern Missionary College, Collegedale, TN, cum laude
                             </div>
                             <div className="grid-template-four-col" id="logos-col">
                                 <li>
-                                    <img src={Logo1}/>
+                                    <img src={Logo1} alt="Amazon"/>
                                 </li>
 
                                 <li>
-                                    <img src={Logo2}/>  
+                                    <img src={Logo2} alt="Books-A-Million"/>  
                                 </li>
 
                                 <li>
-                                    <img src={Logo3}/>
+                                    <img src={Logo3} alt="Barnes & Nobles"/>
                                 </li>
 
                                 <li>
-                                    <img src={Logo4}/>
+                                    <img src={Logo4} alt="Stratton Press"/>
                                 </li>
 
                             </div>

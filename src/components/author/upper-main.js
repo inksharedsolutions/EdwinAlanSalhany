@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react'
-import { Link } from 'gatsby'
+import React from 'react'
+// import { Link } from 'gatsby'
 import {  MDBRow, MDBCol, MDBCard, MDBCardBody, MDBIcon, MDBMedia } from "mdbreact";
 
 import author from '../../../static/author/main_author.jpg'
@@ -33,16 +33,16 @@ While I entertain a wide range of interests my favorite areas of study include B
 I reside with my wife and family in Ethridge, Tennessee, where we serve our community through our natural foods business and various community health projects, and our church as local leaders.     
 
                                         </p>
-                                        <a href="https://www.facebook.com/StrattonPressInc/" target="_blank" className="p-2 fa-lg fb-ic">
+                                        <a href="https://www.facebook.com/StrattonPressInc/" target="_blank" rel="noreferrer" className="p-2 fa-lg fb-ic">
                                             <MDBIcon fab icon="facebook-f" />
                                         </a>
-                                        <a href="https://twitter.com/strattonpress/" target="_blank" className="p-2 fa-lg tw-ic">
+                                        <a href="https://twitter.com/strattonpress/" target="_blank" rel="noreferrer" className="p-2 fa-lg tw-ic">
                                             <MDBIcon fab icon="twitter" />
                                         </a>
-                                        <a href="https://www.instagram.com/strattonpress/" target="_blank" className="p-2 fa-lg tw-ic">
+                                        <a href="https://www.instagram.com/strattonpress/" target="_blank" rel="noreferrer" className="p-2 fa-lg tw-ic">
                                             <MDBIcon fab icon="instagram" />
                                         </a>
-                                        <a href="https://www.goodreads.com/author/show/6067587.Edwin_Alan_Salhany" target="_blank" className="p-2 fa-lg dribbble-ic">
+                                        <a href="https://www.goodreads.com/author/show/6067587.Edwin_Alan_Salhany" target="_blank" rel="noreferrer" className="p-2 fa-lg dribbble-ic">
                                             <MDBIcon fab icon="goodreads-g" />
                                         </a>
                                     </MDBCol>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { DiscussionEmbed } from 'disqus-react'
 import '../../assets/scss/book.scss'
-import {Link} from 'gatsby'
+// import {Link} from 'gatsby'
 
 import Book1 from '../../../static/books/Book1.png'
 // import Book2 from '../../../static/books/Book2.png'
@@ -10,7 +10,7 @@ import Book1 from '../../../static/books/Book1.png'
 // import Book5 from '../../../static/books/Book5.png'
 // import Book6 from '../../../static/books/Book6.png'
 
-import {  MDBRow, MDBCol, MDBCard, MDBAvatar, MDBCardBody, MDBIcon, MDBMedia } from "mdbreact";
+import {  MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMedia } from "mdbreact";
 
 const AboutTheBook = (props) => {
     // const slug =(props.location.href);

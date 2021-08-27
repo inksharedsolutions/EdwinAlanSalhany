@@ -75,7 +75,7 @@ const Contact = (props)=>{
 
 						<div className="columns">
 							<div className="column is-full" id="textAreaContainer">
-								<label> Message	</label>
+								<label htmlFor="message"> Message	</label>
 						          <textarea type="text" name='message' 
 							           className="textArea"
 							           placeholder='Message'

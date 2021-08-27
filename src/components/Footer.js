@@ -6,7 +6,7 @@ import {Link} from 'gatsby'
 const Footer = (props) => (
     <footer id="footer" style={props.timeout ? {display: 'none'} : {}}>
             <div className="container-gt" id="footer-info">
-                <img src={Logo}/>
+                <img src={Logo} alt="Edwin Alan Salhany"/>
                 <p>
                     Edwin Alan Salhany loves to hear from readers. You can reach him via email. 
                     Feel free to send questions about writing, his works, interviews 

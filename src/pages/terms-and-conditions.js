@@ -1,29 +1,55 @@
 import React from 'react'
-import Layout from '../components/layout'
+import Layout from "../components/layout"
+import Banner from "../components/banner"
 
-import Header from '../components/policies/terms'
-import SecondLayout from '../components/secod_layout'
-import Policy from '../components/policies/termsConditions'
+import { useStaticQuery, graphql } from "gatsby"
+import Parser from 'html-react-parser';
+import { Helmet } from "react-helmet"
 
-class IndexPage extends React.Component {
-  render() {
-    return (
-      <>
-      <SecondLayout>
-        <Layout>
-          <div>
-            <div id="wrapper">
-              <Header />
-              <Policy />
-            </div>
-            <div id="bg"></div>
-          </div>
-          
-        </Layout>
-      </SecondLayout>
-      </>
-    )
-  }
+const TaC = () =>{
+
+
+	const bannerText = (
+		<>
+			<span className="banr-tagline-fx">Edwin Alan Salhany</span>
+			<h1 className="banr-header-fx">
+				Terms And
+				<span className="banr-spn-highlight" id="span-non-front">Conditions</span>
+			</h1>
+		</>
+	)
+
+	const FetchMarkDown = useStaticQuery(graphql`
+		 query TermsAndConditionsPageQuery  {
+			  markdownRemark(fileAbsolutePath: {regex: "/terms-and-conditions.md/" }) {
+			    frontmatter {
+			      author 
+			      date
+			      title
+			    }
+			    html
+			}
+		}
+	`)
+
+	const data = {...FetchMarkDown.markdownRemark};
+
+
+	return(
+	 	<>
+	 		<Layout>
+				 <Helmet title="Terms and Conditions | Edwin Alan Salhany" />
+	 			<Banner bannerContext={bannerText} />
+	 				<div className="container">
+						<div id="terms-and-conditions-content">
+							<div className="">{Parser(data.html)}</div>
+							
+						</div>
+					</div>
+	 		</Layout>
+	 	</>
+	)
 }
 
-export default IndexPage
+
+export default TaC;

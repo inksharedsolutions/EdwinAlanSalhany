@@ -1,38 +1,88 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Logo from '../../static/logo/logo.png'
-import {Link} from 'gatsby'
+import React from 'react';
+import { Link } from 'gatsby';
+import { faTwitter, faInstagram, faFacebook, faGoodreads } from '@fortawesome/fontawesome-free-brands';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import Navlist from './links';
+import FooterLogo from '../assets/img/icon-logo/logo.png';
 
-const Footer = (props) => (
-    <footer id="footer" style={props.timeout ? {display: 'none'} : {}}>
-            <div className="container-gt" id="footer-info">
-                <img src={Logo} alt="Edwin Alan Salhany"/>
-                <p>
-                    Edwin Alan Salhany loves to hear from readers. You can reach him via email. 
-                    Feel free to send questions about writing, his works, interviews 
-                    and other publicity matters.
-                </p> 
+const footer = (props) => {
+	return (
+		<footer className="footer-section">
+			<div className="container">
+				<div className="columns navlist-footer-column">
+					<div className="column text-center trademark-heading">
+						<div className="logo-footer-container">
+							<span className="images-portray">
+								<img alt="footer-logo" src={FooterLogo} />
+							</span>
 
-                <div className="two-grid-column" id="footer-info-lower">
-                    <p>Copyright 2021. Stratton Press</p>
+							<h1>Edwin Alan Salhany</h1>
+						</div>
 
-                    <ul>
-                        <li>
-                            <Link to="/privacy-policy">Privacy Policy</Link>
-                        </li>
+						<p>
+							Edwin Alan Salhany loves to hear from readers. You can reach him via email. Feel free to send
+							questions about writing, his works, interviews and other publicity matters.
+						</p>
+					</div>
 
-                        <li>
-                            <Link to="/terms-and-conditions">Terms and Conditions</Link>
-                        </li>
-                        
-                    </ul>
-                </div>
-            </div>
-    </footer>
-)
+					<div className="column">
+						<nav className="footer-nav-list">
+							<li><Link to="/">Home</Link></li>
+							<li><Link to="/about-the-author">About the Author</Link></li>
+							<li><Link to="/book">Book</Link></li>
+							<li><Link to="/contact">Contact</Link></li>
+						</nav>
+					</div>
+				</div>
 
-Footer.propTypes = {
-    timeout: PropTypes.bool
-}
+				<div className="columns">
+					<div className="column">
+						<span className="footer-copyright">
+							<span className="footer-year">{new Date().getFullYear()}</span>
+							&#169; Copyright. Stratton press
+						</span>
 
-export default Footer
+						<span class="lower-nav-footer">
+							<li><Link to="/terms-and-conditions">Terms and Conditions</Link></li>
+							<li><Link to="/privacy-policy">Privacy Policy</Link></li>
+						</span>
+					</div>
+
+					<div className="column text-center trademark-heading">
+						<nav id="style_soc_medias">
+							<a
+								href="https://www.facebook.com/StrattonPressInc/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<FontAwesomeIcon className="font-awesome" icon={faFacebook} />
+							</a>
+
+							<a href="https://twitter.com/strattonpress/" target="_blank" rel="noopener noreferrer">
+								<FontAwesomeIcon className="font-awesome" icon={faTwitter} />
+							</a>
+
+							<a
+								href="https://www.instagram.com/strattonpress/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<FontAwesomeIcon className="font-awesome" icon={faInstagram} />
+							</a>
+
+							<a
+								href="https://www.goodreads.com/strattonpress/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<FontAwesomeIcon className="font-awesome" icon={faGoodreads} />
+							</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</footer>
+	);
+};
+
+export default footer;

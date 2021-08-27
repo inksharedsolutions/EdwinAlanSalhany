@@ -1,60 +1,50 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-// import Helmet from 'react-helmet'
-// import { StaticQuery, graphql } from 'gatsby'
+/**
+ * Layout component that queries for data
+ * with Gatsby's useStaticQuery component
+ *
+ * See: https://www.gatsbyjs.org/docs/use-static-query/
+ */
 
-import '../assets/scss/main.scss'
+import React from "react"
+import PropTypes from "prop-types"
+import { useStaticQuery, graphql } from "gatsby"
+import Header from "./header"
+import Footer from "./footer"
+import "./layout.css"
+import "../assets/scss/style.scss"
 
-const Layout = ({ children, location }) => {
-
-  let content;
-
-  if (location && location.pathname === '/') {
-    content = (
-      <div>
-        {children}
-      </div>
-    )
-  } else {
-    content = (
-      <div id="wrapper" className="page">
-        <div>
-          {children}
-        </div>
-      </div>
-    )
-  }
+const Layout = ({ children }) => {
+ 
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site { 
+        siteMetadata {
+          title
+          }
+        }
+      }
+  `) 
 
   return (
     <>
-      {children}
+      <Header
+          siteTitle={
+            data.site.siteMetadata.title
+          } />
+
+        <main>
+          {children}
+        </main>
+        
+        <Footer navList={
+          ['Home',
+          'About the Author',
+          'Books', 
+          'Contact']}
+        />
     </>
-    // <StaticQuery
-    //   query={graphql`
-    //     query SiteTitleQuery {
-    //       site {
-    //         siteMetadata {
-    //           title
-    //         }
-    //       }
-    //     }
-    //   `}
-    //   render={data => (
-    //     <>
-    //       <Helmet
-    //         title={data.site.siteMetadata.title}
-    //         meta={[
-    //           { name: 'description', content: 'Sample' },
-    //           { name: 'keywords', content: 'sample, something' },
-    //         ]}
-    //       >
-    //         <html lang="en" />
-    //       </Helmet>
-    //       {content}
-    //     </>
-    //   )}
-    // />
   )
+
 }
 
 Layout.propTypes = {

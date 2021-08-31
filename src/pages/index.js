@@ -14,8 +14,8 @@ const IndexPage = () => {
 		<>
 			<span className="banr-tagline-fx">Edwin Alan Salhany</span>
 			<h1 className="banr-header-fx">
-				<span className="banr-spn-2">THE GOSPEL "LITE"</span> 
-				<span className="banr-spn-highlight">FOUR WITNESSES - ONE LIFE</span>
+				<span className="banr-spn-2">FOUR WITNESSES - ONE LIFE</span> 
+				<span className="banr-spn-highlight">THE GOSPEL "LITE"</span>
 				
 				<Link
 					key=""

@@ -8,8 +8,10 @@ $primary-font: "Quicksand", sans-serif !important;
 $prm-font-size : 12px;
 
 
-.columns{
-	margin-bottom: 0;
+.column{
+display: flex;
+align-items: center;   
+flex-direction: column;
 }
 
 .body-author-contents{
@@ -55,8 +57,11 @@ $prm-font-size : 12px;
 }
 
 .author-image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 	img{
-	    width: 178px;
+	    width: 350px;
 	    border: 12px solid #e0e0db57;
 	}
 }
@@ -71,9 +76,14 @@ $prm-font-size : 12px;
 }
 
 .author-name{
-    position: absolute;
+  
+
     font-size: 26px;
-    margin: 60px 16px;
+    margin: 30px 16px;
+    
+    @media (max-width: 500px) {
+        margin: 30px 16px 0;
+    }
 
     .author-span-ft{
 	    display: block;

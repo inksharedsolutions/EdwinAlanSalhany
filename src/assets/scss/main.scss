@@ -19,6 +19,12 @@
     text-transform: uppercase;
     font-weight: bold;
     font-size: 6em;
+    text-align: left;
+
+    @media (max-width:768px) {
+        text-align: center;
+        
+    }
   }                     
 }
 
@@ -39,12 +45,15 @@
 }
 .flex{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
+    @media (max-width:768px) {
+        align-items: center;
+    }
     img{
         width: 50%;
         margin: 0;
-
+        
         @media (max-width: 500px) {
             
             width: 80%;
@@ -61,7 +70,7 @@
 }
 
 .author-name-tagline{
-	
+	text-align: center;
     position: relative;
     font-size: 3em;
     letter-spacing: 2px;
@@ -220,14 +229,17 @@
     .img-link{
        img{
         max-width: 450px;
-        background-color: #fff;
+        
+        &:hover{
+            transform: scale(1.1);
+        }
+     
        }   
+       
+
      }
 
-    .img-link:hover{
-        transform: scale(1.1);
-    }
-
+ 
 }
 
 /*Slick Custom*/

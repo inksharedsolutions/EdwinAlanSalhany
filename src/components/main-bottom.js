@@ -46,15 +46,13 @@ const Mainbottom = () =>{
 		<section className="main-bottom-section">
 			 <div className="container">
 			 	<div className="main-bottom-wrapper">
-			 		<h1>Featured Books</h1>
+			 		<h1>Featured Book</h1>
 
 
             
                     <div className="book-wrapper-slider">
-                        <Link to="/book/#adult-milkshake" className="img-link"><img src={Book1} alt="book"/></Link>
-						{/* <Link to="/books/#philosophical-poetry" className="img-link"><img src={Book2} alt="books"/></Link>
-						<Link to="/books/#noahs-other-ark" className="img-link"><img src={Book3} alt="books"/></Link> */}
-						{/* <Link to="/books/#fled-to-mexico" className="img-link"><img src={Book4} alt="books"/></Link> */}
+                        <Link to="/book" className="img-link"><img src={Book1} alt="book"/></Link>
+						
                     </div>
 			 	</div>
 			</div>

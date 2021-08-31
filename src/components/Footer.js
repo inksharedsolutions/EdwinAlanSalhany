@@ -71,7 +71,7 @@ const footer = (props) => {
 							</a>
 
 							<a
-								href="https://www.goodreads.com/strattonpress/"
+								href="https://www.goodreads.com/user/show/89077099-stratton-press"
 								target="_blank"
 								rel="noopener noreferrer"
 							>

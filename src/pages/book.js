@@ -63,7 +63,7 @@ const abouttheauthor= (props) =>{
 									<span>Paperback :</span>
 									<li><a rel="noopener noreferrer" target="_blank" href="https://www.amazon.com/Gospel-Lite-Four-Witnesses-Life/dp/164345188X/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1554414877&sr=1-1">Amazon</a></li>
 									<li><a rel="noopener noreferrer" target="_blank" href="https://www.barnesandnoble.com/w/the-gospel-lite-edwin-alan-salhany/1131036818?ean=9781643451886">Barnes & Noble </a></li>
-									{/* <li><a rel="noopener noreferrer" target="_blank" href="https://www.booksamillion.com/p/Gods-Opportunity-Revised-Expanded/Hampton-Scott-Tonk/9781648953040?id=8049069540563&_ga=2.191972778.1023475077.1615324156-2145380449.1604906972#">Books A Million</a></li> */}
+									<li><a rel="noopener noreferrer" target="_blank" href="https://www.booksamillion.com/p/Gospel-Lite/Edwin-Alan-Salhany/9781643451886?id=8258036461372&__cf_chl_jschl_tk__=pmd_NhDf3oOm6nszHzYgVA5g7HbvvE9jbU_pFog3KJcPQ8w-1630434430-0-gqNtZGzNAmWjcnBszQrl">Books A Million</a></li>
 								</nav>
 							</div>
 						</div>

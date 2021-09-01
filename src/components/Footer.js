@@ -71,7 +71,7 @@ const footer = (props) => {
 							</a>
 
 							<a
-								href="https://www.goodreads.com/user/show/89077099-stratton-press"
+								href="https://www.goodreads.com/book/show/45290579-the-gospel-lite?from_search=true&from_srp=true&qid=A1CkUd9sAr&rank=1"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
